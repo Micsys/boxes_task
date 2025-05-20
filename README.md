@@ -21,6 +21,7 @@ List all boxes             	GET    	/boxes
 Assign box to event        	POST   	/boxes/{id}/assign/{event} 
 Add money to box           	POST   	/boxes/{id}/money  
 Empty box to event account 	POST   	/boxes/{id}/empty
+
 Remove box             	    DELETE 	/boxes/{id}     
 Financial report			      GET		/events/report
 
