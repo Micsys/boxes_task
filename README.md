@@ -30,4 +30,4 @@ Empty box to event account 	POST   	`/boxes/{id}/empty`
 -Password: *empty*
 
 #Testing
--Postman or test.http in resurces
+-Postman or test.http in resources
