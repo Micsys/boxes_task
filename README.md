@@ -13,6 +13,7 @@
 - Run the file
 
 #API Endpoints
+
 Endpoint:                  	Method:	URL:                          
 Create fundraising event   	POST   	/events 
                    
