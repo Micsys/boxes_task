@@ -1,0 +1,32 @@
+###Create Event
+POST http://localhost:8080/events
+Content-Type: application/json
+
+{
+  "name": "Charity One",
+  "currency": "EUR"
+}
+
+###Register Box
+POST http://localhost:8080/boxes
+
+###Assign Box to Event
+POST http://localhost:8080/boxes/1/assign/1
+
+###Add Money to Box
+POST http://localhost:8080/boxes/1/money
+Content-Type: application/json
+
+{
+  "currency": "USD",
+  "amount": 100.00
+}
+
+###Empty the box and transfer
+POST http://localhost:8080/boxes/1/empty
+
+###List all events
+GET http://localhost:8080/events
+
+###List all boxes
+GET http://localhost:8080/boxes
