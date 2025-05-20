@@ -3,10 +3,10 @@ package org.example.boxes_task.service;
 import org.example.boxes_task.entity.*;
 import org.example.boxes_task.repository.CollectionBoxRepository;
 import org.springframework.stereotype.Service;
+import org.example.boxes_task.util.CurrencyConverter;
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Optional;
-import org.example.boxes_task.util.CurrencyConverter;
 
 
 @Service

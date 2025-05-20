@@ -1,5 +1,6 @@
 package org.example.boxes_task.controller;
 
+import org.example.boxes_task.dto.FinancialReportEntry;
 import org.example.boxes_task.dto.CreateEventRequest;
 import org.example.boxes_task.entity.FundraisingEvent;
 import org.example.boxes_task.service.FundraisingEventService;
@@ -25,5 +26,10 @@ public class FundraisingEventController {
     @GetMapping
     public List<FundraisingEvent> list() {
         return service.getAllEvents();
+    }
+
+    @GetMapping("/report")
+    public List<FinancialReportEntry> report() {
+        return service.getFinancialReport();
     }
 }

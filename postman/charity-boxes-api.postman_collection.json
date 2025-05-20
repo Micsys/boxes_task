@@ -1,0 +1,202 @@
+{
+  "info": {
+    "_postman_id": "5222f411-e18b-47e4-8c47-bfc119f98da7",
+    "name": "Charity Boxes API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "43656240",
+    "_collection_link": "https://speeding-spaceship-3425186.postman.co/workspace/Micha%C5%82-Szyszkowski's-Workspace~63165d04-5b0e-42df-88e0-467fc652fa43/collection/43656240-5222f411-e18b-47e4-8c47-bfc119f98da7?action=share&source=collection_link&creator=43656240"
+  },
+  "item": [
+    {
+      "name": "Create Event",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Charity One\",\n  \"currency\": \"EUR\"\n}"
+        },
+        "url": {
+          "raw": "localhost:8080/events",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "events"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Register Collection Box",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/boxes",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "boxes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Assign Box to Event",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/boxes/1/assign/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "boxes",
+            "1",
+            "assign",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add Money to Box",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"currency\": \"USD\",\n  \"amount\": 100.00\n}"
+        },
+        "url": {
+          "raw": "localhost:8080/boxes/1/money",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "boxes",
+            "1",
+            "money"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Empty Box - Transfer",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/boxes/1/empty",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "boxes",
+            "1",
+            "empty"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "List Events",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/events",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "events"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "List Boxes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/boxes",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "boxes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Financial Report",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/events/report",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "events",
+            "report"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Collection Box",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/boxes/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "boxes",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

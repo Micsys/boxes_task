@@ -7,6 +7,15 @@ Content-Type: application/json
   "currency": "EUR"
 }
 
+###Create Event2
+POST http://localhost:8080/events
+Content-Type: application/json
+
+{
+  "name": "Charity Two",
+  "currency": "USD"
+}
+
 ###Register Box
 POST http://localhost:8080/boxes
 
@@ -30,3 +39,10 @@ GET http://localhost:8080/events
 
 ###List all boxes
 GET http://localhost:8080/boxes
+
+###Financial Report
+GET http://localhost:8080/events/report
+
+###Delete Box
+DELETE http://localhost:8080/boxes/1
+
