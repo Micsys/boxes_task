@@ -31,7 +31,7 @@ Empty box to event account 	POST   	/boxes/{id}/empty
 
 Remove box                  DELETE 	/boxes/{id}     
 
-Financial report            GET		/events/report
+Financial report            GET		  /events/report
 
 #H2 Database
 -URL: http://localhost:8080/h2-console  
